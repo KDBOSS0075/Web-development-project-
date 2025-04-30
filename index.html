@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0d0d0d;
+      --accent-color: #d4af37;
+      --background-color: #1a1a1a;
+      --text-color: #ffffff;
+      --font-family: 'Playfair Display', serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: var(--font-family);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    h1 {
+      color: var(--accent-color);
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #262626;
+      border: 1px solid var(--accent-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px;
+      width: 250px;
+      box-shadow: 0 8px 16px rgba(212, 175, 55, 0.2);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    button {
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #bfa233;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Luxury Boutique</h1>
+  </header>
+
+  <section class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Luxury Bag">
+      <h2>Gold Leather Bag</h2>
+      <p>$1,299.00</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Luxury Watch">
+      <h2>Diamond Watch</h2>
+      <p>$4,999.00</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Luxury Shoes">
+      <h2>Velvet Heels</h2>
+      <p>$899.00</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
+</body>
+</html>
